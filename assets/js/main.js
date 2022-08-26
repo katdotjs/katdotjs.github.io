@@ -1,5 +1,5 @@
 /*
-	Strongly Typed by HTML5 UP
+	Escape Velocity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -28,8 +28,8 @@
 		$('#nav > ul').dropotron({
 			mode: 'fade',
 			noOpenerFade: true,
-			hoverDelay: 150,
-			hideDelay: 350
+			alignment: 'center',
+			detach: false
 		});
 
 	// Nav.
@@ -38,6 +38,7 @@
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
+					'<span class="title">' + $('#logo h1').html() + '</span>' +
 				'</div>'
 			)
 				.appendTo($body);
