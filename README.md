@@ -1,4 +1,4 @@
-DemoSite
+Kat Graham Portfolio Site
 --------
 By Kat Graham | @katdotjs
 
