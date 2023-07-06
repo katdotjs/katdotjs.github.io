@@ -12,14 +12,29 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="components/header/header.js" type="text/javascript" defer></script>
 		<script src="components/footer/footer.js" type="text/javascript" defer></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			<header-component></header-component>
+			<section id="header" class="wrapper">
+
+                <div id="logo">
+                    <h1><a href="index.html">Kat Graham</a></h1>
+                    <p>A web developer in Rochester, NY.</p>
+                </div>
+
+            
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </section>
 
 			<!-- Intro -->
 				<section id="intro" class="wrapper style1">
@@ -27,7 +42,7 @@
 					<div class="container">
 						<p class="style1"></p>
 						<p class="style2">
-							Hi, my name is Kat Graham.
+							Hello World. My name is Kat Graham!
 						</p>
 						<p class="style3">
 							Ever since I graduated in 2019, I have been immersed in the world of development, 
@@ -41,9 +56,50 @@
 					</div>
 				</section>
 
+			<!-- About Me -->
+			<section id="about" class="wrapper style2">
+				<div class="title">About</div>
+					<div class="container">
 
-			<!-- Main -->
-				<section id="highlights" class="wrapper style3">
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>I tell computers to do things... and sometimes they listen.</h2>
+									</header>
+									<div class="row">
+										<div class="col-6">
+											<a href="#" class="image featured">
+												<img src="images/png/plant.png" alt="plant-svg"/>
+											</a>
+										</div>
+										<div class="col-6">
+											<p>
+												At least that's a very silly version of what I do! I primarily focus on 
+												Frontend Web Development, so the look and feel of a website and how the website interacts. I also 
+												have experience in Backend development, design, and analytics. 
+											</p>
+											<p>
+												Currently, I work full time at Paychex as a Frontend Engineer. In this role, 
+												I believe that websites should be a fun and simple experience, and I take pride in making 
+												reusable and sustainable code. 
+											</p>
+											<p>
+												I have always loved the world of technology and all the possibilities it holds. The one thing I love 
+												the most, is that it never gets boring, and there is always something new to add to the toolkit.
+											</p>
+											<a href="https://resume.creddle.io/resume/96y1o54a93n" target="__blank" class="button style1">View Resume</a>
+										</div>
+									</div>
+								
+								</article>
+							</div>
+
+					</div>
+			</section>
+
+			<!-- Projects -->
+				<section id="projects" class="wrapper style3">
 					<div class="title">Projects</div>
 					<div class="container">
 						<div class="row aln-center">
