@@ -44,7 +44,9 @@ class Footer extends HTMLElement {
                     </div>
                     <div id="copyright">
                         <ul>
-                            <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            <li>&copy; Kat Graham</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            <li>Icons: <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a></li>
+                            
                         </ul>
                     </div>
                 </div>
