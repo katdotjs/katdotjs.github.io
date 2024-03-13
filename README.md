@@ -1,6 +1,6 @@
-Kat Graham Portfolio Site
+Kat Terranova Portfolio Site
 --------
-By Kat Graham | @katdotjs
+By Kat Terranova | @katdotjs
 
 Theme
 -----
