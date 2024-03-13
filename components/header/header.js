@@ -8,7 +8,7 @@ class Header extends HTMLElement {
             <section id="header" class="wrapper">
 
                 <div id="logo">
-                    <h1><a href="index.html">Kat Graham</a></h1>
+                    <h1><a href="index.html">Kat Terranova</a></h1>
                     <p>A web developer in Rochester, NY.</p>
                 </div>
 
