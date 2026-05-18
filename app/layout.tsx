@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 import "./globals.css"
 import BlobCursor from '../components/BlobCursor'
+import SiteBackground from "@/components/site-background"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable}`}>
       <body className="font-sans antialiased">
+        <SiteBackground />
         <BlobCursor
           blobType="circle"
           fillColor="oklch(79.2% 0.209 151.711)"
@@ -47,7 +49,7 @@ export default function RootLayout({
           slowDuration={0.5}
           zIndex={100}
         />
-        {children}
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   )

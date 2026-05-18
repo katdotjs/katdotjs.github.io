@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { useRouter } from "next/navigation"
 import MagicBento from "@/components/MagicBento"
+import SiteHeader from "@/components/site-header"
 import TextPressure from "@/components/TextPressure"
 import StarBorder from "@/components/StarBorder"
 import Image from "next/image"
@@ -61,7 +62,9 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
+    <div className="relative min-h-screen text-foreground">
+      <SiteHeader />
+
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
           {["intro", "work", "thoughts", "connect"].map((section) => (
@@ -86,7 +89,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
             <div className="lg:col-span-3 space-y-6 sm:space-y-8">
               <div className="space-y-3 sm:space-y-2">
-                <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
+                <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2026</div>
                 <div className="font-light tracking-tight">
                   <TextPressure
                     text="Kat"
@@ -186,7 +189,7 @@ export default function Home() {
                   minFontSize={40}
                 />
               </div>
-              <div className="text-sm text-muted-foreground font-mono">2019 — 2025</div>
+              <div className="text-sm text-muted-foreground font-mono">2019 — 2026</div>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -294,6 +297,14 @@ export default function Home() {
                     url: "https://www.paychexstore.com",
                     label: "Project"
                   },
+                  {
+                    title: "Blog",
+                    description: "Markdown notes powered by gray-matter front matter.",
+                    date: "New",
+                    readTime: "",
+                    url: "/blog",
+                    label: "Writing"
+                  },
                 ]}
                 onCardClick={(item) => router.push((item as any).url ?? "/")}
                 enableStars
@@ -395,7 +406,7 @@ export default function Home() {
         <footer className="py-12 sm:py-16 border-t border-border">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div className="space-y-2">
-              <div className="text-sm text-muted-foreground">© 2025 Kat Terranova. All rights reserved.</div>
+              <div className="text-sm text-muted-foreground">© 2026 Kat Terranova. All rights reserved.</div>
               <div className="text-xs text-muted-foreground">Template Built with v0.dev by Felix Macaspac</div>
             </div>
 
